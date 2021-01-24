@@ -1,11 +1,11 @@
-a {
-    color:black;
-    text-decoration: none;
+body {
+    background-color: white;
+    color: black;
 }
 h1 {
     font-size: 40px;
     text-align: center;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid light;
     margin: 0px;
     padding: 10px;
 }
@@ -37,6 +37,10 @@ h1 {
 #grid ul {
     margin: 0px;
     padding-left: 30px;
+}
+a {
+    color:black;
+    text-decoration: none;
 }
 @media(max-width: 800px) {
     #grid {

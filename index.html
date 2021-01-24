@@ -7,6 +7,20 @@
     </head>
     <body>
         <h1><a href="index.html">JSChang</a></h1>
+        <input type="button" value="Day" onclick="
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        var links = document.querySelectorAll('a');
+        for(var i=0; i<links.length; i++) {
+            links[i].style.color = 'black';
+        }">
+        <input type="button" value="Night" onclick="
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        var links = document.querySelectorAll('a');
+        for(var i=0; i<links.length; i++) {
+            links[i].style.color = 'white';
+        }">
         <div id="grid">
             <ol>
                 <li><a href="education.html">Education</a></li>
