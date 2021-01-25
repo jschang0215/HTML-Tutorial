@@ -4,42 +4,11 @@
         <title>JSChang</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
+        <script src="color.js"></script>
     </head>
     <body>
         <h1><a href="index.html">JSChang</a></h1>
-        <!-- <input type="button" value="Day" onclick="
-        document.querySelector('body').style.backgroundColor = 'white';
-        document.querySelector('body').style.color = 'black';
-        var links = document.querySelectorAll('a');
-        for(var i=0; i<links.length; i++) {
-            links[i].style.color = 'black';
-        }">
-        <input type="button" value="Night" onclick="
-        document.querySelector('body').style.backgroundColor = 'black';
-        document.querySelector('body').style.color = 'white';
-        var links = document.querySelectorAll('a');
-        for(var i=0; i<links.length; i++) {
-            links[i].style.color = 'white';
-        }"> -->
-        <input type="button" id="night_day" value="Night" onclick="
-        if(this.value==='Night') {
-            var body_tag = document.querySelector('body');
-            body_tag.style.backgroundColor = 'black';
-            body_tag.style.color = 'white';
-            var links = document.querySelectorAll('a');
-            for(var i=0; i<links.length; i++) {
-                links[i].style.color = 'white';
-            }
-            document.getElementById('night_day').value = 'Day';
-        } else {
-            document.querySelector('body').style.backgroundColor = 'white';
-            document.querySelector('body').style.color = 'black';
-            var links = document.querySelectorAll('a');
-            for(var i=0; i<links.length; i++) {
-                links[i].style.color = 'black';
-            }
-            document.getElementById('night_day').value = 'Night';
-        }">
+        <input type="button" id="night_day" value="Night" onclick="nightDayHandler(this)">
         <div id="grid">
             <ol>
                 <li><a href="education.html">Education</a></li>
